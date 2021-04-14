@@ -341,7 +341,7 @@ server <- function(input, output,session) {
                   data_row.padding = px(3)) %>%
       opt_row_striping()
     
-    gtsave(gt_tbl, paste("CoxTable-", Sys.Date(), ".html", sep = ""), path = "/Users/jian.yang/Desktop/Work/RShiny Stuff/survival_analysis_app/www")
+    gtsave(gt_tbl, paste("CoxTable-", Sys.Date(), ".html", sep = ""), path = "/root/rsurv/www")
     return(gt_tbl)
   })
   
